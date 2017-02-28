@@ -9,6 +9,6 @@ You have to install all packages manually using `tlmgr`, like
     
 or from a file:
 
-    COPY packages.txt
-    RUN tlmgr install $(cat packages.txt)
+    COPY packages.txt /tmp/packages.txt
+    RUN tlmgr install $(cat /tmp/packages.txt)
 
